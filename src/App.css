@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========= Navbar ========== */
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px 10px;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ========= Home Page ========== */
+
+.home-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-header {
+  font-family: "Courier", monospace;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px auto;
+  font-weight: 600;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+  animation: typewriter 3s steps(40, end) forwards,
+    blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ========= Counter App ========== */
+
+.counter-app {
+  color: #fff;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-app__container {
+  background: #d1d1d1;
+  color: #000;
+  width: 450px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.counter-app__heading {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.counter-app__content {
+  width: 150px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.counter-app__btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.4s, cursor 0.4s;
+  color: white;
+  cursor: pointer;
+}
+
+.counter-app__btn-increase {
+  margin-right: 20px;
+  background-color: rgb(22, 220, 22);
+}
+
+.counter-app__btn-increase:hover {
+  background-color: rgb(0, 151, 0);
+}
+
+.counter-app__btn-decrease {
+  background-color: rgb(255, 32, 32);
+  margin-right: 20px;
+}
+
+.counter-app__btn-decrease:hover {
+  background-color: rgb(184, 0, 0);
+}
+
+.counter-app__btn-reset {
+  background-color: rgb(228, 156, 23);
+}
+
+.counter-app__btn-reset:hover {
+  background-color: rgb(166, 108, 0);
+}
+
+.counter-app__note {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* ========= Background Changer ========== */
+
+.background-changer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: background-color 0.8s;
+}
+
+.background-changer__buttons {
+  background: linear-gradient(125deg, white, orange);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.background-changer__btn {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s, cursor 0.4s, transform 0.4s;
+}
+
+.background-changer__btn:hover {
+  transform: translateY(-5px);
+}
+
+.background-changer__btn-red {
+  background-color: #ff0000;
+}
+
+.background-changer__btn-green {
+  background-color: #00ae00;
+}
+
+.background-changer__btn-blue {
+  background-color: #0000ff;
+}
+
+.background-changer__btn-pink {
+  background-color: #ff768d;
+}
+
+.background-changer__btn-yellow {
+  background-color: #ffff00;
+  color: #000;
+}
+
+.background-changer__btn-orange {
+  background-color: orange;
+  color: #000;
+}
+
+.background-changer__btn-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.background-changer__btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ========= Random Password Generator ========== */
+
+label {
+  margin-left: 0.2rem;
+}
+
+.password-generator {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-generator__container {
+  width: 600px;
+  height: max-content;
+  background-color: rgb(56, 56, 56);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.password-generator__header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.password-generator__input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.password-generator__input-text {
+  width: 75%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-self: center;
+  color: #5d5de7;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.password-generator__copy-btn {
+  background-color: #5d5de7;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  width: 20%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.4s;
+}
+
+.password-generator__copy-btn:hover {
+  cursor: pointer;
+  background-color: #3232ff;
+}
+
+.password-generator__controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 30px;
+}
+
+.password-generator__controls span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-generator__length-control {
+  cursor: pointer;
+}
+
+.password-generator__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.password-generator__generate-button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: rgb(208, 44, 44);
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.4s, cursor 0.4s;
+}
+
+.password-generator__generate-button:hover {
+  background-color: rgb(255, 51, 51);
+  cursor: pointer;
+}
