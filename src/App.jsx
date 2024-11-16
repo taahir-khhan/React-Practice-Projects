@@ -3,8 +3,10 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  HashRouter as Router,
   RouterProvider,
 } from "react-router-dom";
+
 import "./App.css";
 import {
   BackgroundChanger,
