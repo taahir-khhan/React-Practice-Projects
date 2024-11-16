@@ -18,7 +18,7 @@ import {
 import "./index.css";
 import Layout from "./Layout.jsx";
 
-// Create the router Method-2
+// Create the router Method-2 dist folder is added
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
