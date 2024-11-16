@@ -82,6 +82,72 @@ export default function Header() {
               Todo App
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/accordion"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Accordion
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/color-generator"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Rgb & Hex Color Generator
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/star-rating"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Star Rating
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/image-slider"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Image Slider
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/load-more"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Load More
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/revision"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Revision
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

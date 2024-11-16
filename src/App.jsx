@@ -9,11 +9,17 @@ import {
 
 import "./App.css";
 import {
+  Accordion,
   BackgroundChanger,
   CounterApp,
   CurrencyConvertor,
   Home,
+  ImageSlider,
+  LoadMore,
+  RandomColor,
   RandomPassword,
+  Revision,
+  StarRating,
   ThemeChanger,
   Todo,
 } from "./components/index.js";
@@ -31,6 +37,21 @@ const router = createBrowserRouter(
       <Route path="currency-convertor" element={<CurrencyConvertor />} />
       <Route path="theme-changer" element={<ThemeChanger />} />
       <Route path="todo-app" element={<Todo />} />
+      <Route path="accordion" element={<Accordion />} />
+      <Route path="color-generator" element={<RandomColor />} />
+      <Route path="star-rating" element={<StarRating />} />
+      <Route
+        path="image-slider"
+        element={
+          <ImageSlider
+            url="https://picsum.photos/v2/list"
+            pages={1}
+            limit={10}
+          />
+        }
+      />
+      <Route path="load-more" element={<LoadMore />} />
+      <Route path="revision" element={<Revision />} />
     </Route>
   )
 );
