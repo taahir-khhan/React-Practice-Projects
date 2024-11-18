@@ -10,6 +10,7 @@ import RandomColor from "./08-RandomColor/RandomColor";
 import StarRating from "./09-StarRating/StarRating";
 import ImageSlider from "./10-ImageSlider/ImageSlider";
 import LoadMore from "./11-LoadMore/LoadMore";
+import TreeView from "./12-Tree-View/TreeView";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import Revision from "./Z-Revision/Revision";
@@ -30,4 +31,5 @@ export {
   StarRating,
   ThemeChanger,
   Todo,
+  TreeView,
 };

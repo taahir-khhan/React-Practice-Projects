@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import "./App.css";
+import menus from "./components/12-Tree-View/data.js";
 import {
   Accordion,
   BackgroundChanger,
@@ -22,6 +23,7 @@ import {
   StarRating,
   ThemeChanger,
   Todo,
+  TreeView,
 } from "./components/index.js";
 import "./index.css";
 import Layout from "./Layout.jsx";
@@ -51,6 +53,7 @@ const router = createBrowserRouter(
         }
       />
       <Route path="load-more" element={<LoadMore />} />
+      <Route path="tree-view" element={<TreeView menus={menus} />} />
       <Route path="revision" element={<Revision />} />
     </Route>
   )

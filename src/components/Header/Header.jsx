@@ -140,6 +140,17 @@ export default function Header() {
 
           <li>
             <NavLink
+              to="/tree-view"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Tree View
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
               to="/revision"
               className={({ isActive }) =>
                 ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
