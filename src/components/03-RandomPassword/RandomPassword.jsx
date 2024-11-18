@@ -49,6 +49,7 @@ function RandomPassword() {
         <h1 className="password-generator__header">
           Random Password Generator
         </h1>
+
         <div className="password-generator__input-group">
           <input
             type="text"
@@ -58,6 +59,7 @@ function RandomPassword() {
             readOnly
             ref={passwordRef}
           />
+
           <button
             className="password-generator__copy-btn"
             onClick={copyPasswordToClipboard}

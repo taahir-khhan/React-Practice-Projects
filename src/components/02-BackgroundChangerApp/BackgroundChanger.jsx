@@ -25,24 +25,31 @@ function BackgroundChanger() {
         <button className="background-changer__btn background-changer__btn-red">
           Red
         </button>
+
         <button className="background-changer__btn background-changer__btn-green">
           Green
         </button>
+
         <button className="background-changer__btn background-changer__btn-blue">
           Blue
         </button>
+
         <button className="background-changer__btn background-changer__btn-pink">
           Pink
         </button>
+
         <button className="background-changer__btn background-changer__btn-yellow">
           Yellow
         </button>
+
         <button className="background-changer__btn background-changer__btn-orange">
           Orange
         </button>
+
         <button className="background-changer__btn background-changer__btn-white">
           White
         </button>
+
         <button className="background-changer__btn background-changer__btn-black">
           Black
         </button>

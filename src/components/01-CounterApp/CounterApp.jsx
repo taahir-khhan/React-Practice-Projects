@@ -16,7 +16,9 @@ function CounterApp() {
     <div className="counter-app">
       <div className="counter-app__container">
         <h1 className="counter-app__heading">Counter App</h1>
+
         <div className="counter-app__content">{count}</div>
+
         <div>
           <button
             className="counter-app__btn counter-app__btn-increase"
@@ -24,12 +26,14 @@ function CounterApp() {
           >
             Add {count}
           </button>
+
           <button
             className="counter-app__btn counter-app__btn-decrease"
             onClick={decreaseCount}
           >
             Remove {count}
           </button>
+
           <button
             className="counter-app__btn counter-app__btn-reset"
             onClick={() => setCount(0)}
@@ -37,6 +41,7 @@ function CounterApp() {
             Reset {count}
           </button>
         </div>
+
         <p className="counter-app__note">(Counter Range 0 - 100)</p>
       </div>
     </div>

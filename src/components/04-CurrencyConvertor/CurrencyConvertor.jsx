@@ -4,13 +4,22 @@ import { InputBox } from "../index";
 
 function App() {
   const [amount, setAmount] = useState(0);
+  const [convertedAmount, setConvertedAmount] = useState(0);
   const [fromCurrency, setFromCurrency] = useState("usd");
   const [toCurrency, setToCurrency] = useState("inr");
-  const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currencyInfo = useCurrencyInfo(fromCurrency);
-
   const options = Object.keys(currencyInfo);
+
+  let ourOption = options.filter((currency) => {
+    if (
+      currency === "inr" ||
+      currency === "usd" ||
+      currency === "eur" ||
+      currency === "sar"
+    )
+      return currency;
+  });
 
   const handleAmountChange = (newAmount) => {
     // Update the amount only if it's different from the current value
@@ -20,20 +29,24 @@ function App() {
   const swap = () => {
     setFromCurrency(toCurrency);
     setToCurrency(fromCurrency);
-    setAmount(convertedAmount);
-    setConvertedAmount(amount);
+    setAmount(0);
+    setConvertedAmount(0);
   };
 
   const convert = () => {
-    setConvertedAmount(amount * currencyInfo[toCurrency]);
+    let value = amount * currencyInfo[toCurrency];
+    setConvertedAmount(value.toFixed(3));
   };
 
   return (
-    <div className="w-full h-[70vh] flex flex-wrap justify-center items-center bg-cover bg-no-repeat">
+    <div
+      className="w-full h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1530446611691-a3c37e62c56a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxjdXJyZW5jeSUyMGNvbnZlcnNpb258ZW58MHx8MHx8fDA%3D')`,
+      }}
+    >
+      <span className="text-4xl font-medium mb-[5rem]">This is the text</span>
       <div className="w-full">
-        <h1 className="text-center text-white text-4xl m-10">
-          Currency Convertor
-        </h1>
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
@@ -45,12 +58,13 @@ function App() {
               <InputBox
                 label="From"
                 amount={amount}
-                currencyOptions={options}
-                onCurrencyChange={() => setAmount(amount)}
+                currencyOptions={ourOption}
+                onCurrencyChange={(currency) => setFromCurrency(currency)}
                 onAmountChange={handleAmountChange}
                 selectCurrency={fromCurrency}
               />
             </div>
+
             <div className="relative w-full h-0.5">
               <button
                 type="button"
@@ -60,16 +74,17 @@ function App() {
                 swap
               </button>
             </div>
+
             <div className="w-full mt-1 mb-4">
               <InputBox
                 label="To"
                 amount={convertedAmount}
-                currencyOptions={options}
+                currencyOptions={ourOption}
                 onCurrencyChange={(currency) => setToCurrency(currency)}
-                amountDisable
                 selectCurrency={toCurrency}
               />
             </div>
+
             <button
               type="submit"
               className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
