@@ -47,7 +47,7 @@ const router = createBrowserRouter(
         element={
           <ImageSlider
             url="https://picsum.photos/v2/list"
-            pages={1}
+            pages={3}
             limit={10}
           />
         }

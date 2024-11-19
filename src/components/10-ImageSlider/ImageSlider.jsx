@@ -36,7 +36,11 @@ function ImageSlider({ url, pages = 1, limit = 10 }) {
   }, [url]);
 
   if (loading) {
-    return <div>Loading data, Please wait !</div>;
+    return (
+      <div className="font-bold p-4 text-2xl text-center">
+        Loading Images, Please wait !
+      </div>
+    );
   }
 
   if (errorMsg !== null) {
@@ -44,12 +48,14 @@ function ImageSlider({ url, pages = 1, limit = 10 }) {
   }
 
   return (
-    <div className="w-full min-h-[80vh] flex items-center justify-center bg-slate-100 ">
+    <div className="w-full min-h-[80vh] flex items-center justify-center bg-black ">
       <div className="w-[700px] h-[450px] flex items-center justify-center relative">
+        {/* Previous Button */}
         <BsArrowLeftCircleFill
           onClick={handlePrevious}
           className="absolute text-[2.5rem] text-white cursor-pointer left-[2rem]"
         />
+
         {images && images.length > 0
           ? images.map((imageItem, idx) => (
               <img
@@ -64,10 +70,14 @@ function ImageSlider({ url, pages = 1, limit = 10 }) {
               />
             ))
           : null}
+
+        {/* Next Button */}
         <BsArrowRightCircleFill
           onClick={handelNext}
           className="absolute text-[2.5rem] text-white cursor-pointer right-[2rem]"
         />
+
+        {/* Navigator circle symbol */}
         <span className="absolute bottom-[1.5rem]">
           {images && images.length
             ? images.map((_, idx) => (

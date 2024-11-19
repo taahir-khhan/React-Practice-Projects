@@ -11,13 +11,15 @@ function MenuItem({ item }) {
     });
   };
 
+  console.log(displayCurrentChildren);
+
   return (
     <li className="ml-8 mb-4">
       <div className="flex gap-5 mb-4">
         <p className="mb-2">{item.label}</p>
         {item && item.children && item.children.length ? (
           <span
-            className="cursor-pointer"
+            className="cursor-pointer text-2xl"
             onClick={() => handleToggle(item.label)}
           >
             {displayCurrentChildren[item.label] ? "-" : "+"}

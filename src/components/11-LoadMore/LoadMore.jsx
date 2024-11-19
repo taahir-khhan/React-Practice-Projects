@@ -39,8 +39,12 @@ function LoadMore() {
 
   return (
     <>
-      {loading && <div>Please Wait, Data is loading!</div>}
-      <div className="w-full h-auto bg-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-10 py-10">
+      {loading && (
+        <div className="font-bold p-4 text-2xl text-center">
+          Please Wait, Products is loading!
+        </div>
+      )}
+      <div className="w-full h-auto bg-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-10 py-10 text-black">
         {products.map((item) => (
           <div
             className="w-[400px] h-auto border-2 border-black rounded-lg text-center py-4"
