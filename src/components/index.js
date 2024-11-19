@@ -11,9 +11,10 @@ import StarRating from "./09-StarRating/StarRating";
 import ImageSlider from "./10-ImageSlider/ImageSlider";
 import LoadMore from "./11-LoadMore/LoadMore";
 import TreeView from "./12-Tree-View/TreeView";
+import QRCodeGenerator from "./13-QR-Code-Generator/QRCodeGenerator";
+import ProgressBar from "./14-Progress-Bar/ProgressBar";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
-import Revision from "./Z-Revision/Revision";
 
 export {
   Accordion,
@@ -25,9 +26,10 @@ export {
   ImageSlider,
   InputBox,
   LoadMore,
+  ProgressBar,
+  QRCodeGenerator,
   RandomColor,
   RandomPassword,
-  Revision,
   StarRating,
   ThemeChanger,
   Todo,

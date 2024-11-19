@@ -151,12 +151,23 @@ export default function Header() {
 
           <li>
             <NavLink
-              to="/revision"
+              to="/qr-code-generator"
               className={({ isActive }) =>
                 ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
               }
             >
-              Revision
+              QR Code Generator
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/progress-bar"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Progress Bar
             </NavLink>
           </li>
         </ul>

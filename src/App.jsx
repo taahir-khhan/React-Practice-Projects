@@ -17,9 +17,10 @@ import {
   Home,
   ImageSlider,
   LoadMore,
+  ProgressBar,
+  QRCodeGenerator,
   RandomColor,
   RandomPassword,
-  Revision,
   StarRating,
   ThemeChanger,
   Todo,
@@ -54,7 +55,8 @@ const router = createBrowserRouter(
       />
       <Route path="load-more" element={<LoadMore />} />
       <Route path="tree-view" element={<TreeView menus={menus} />} />
-      <Route path="revision" element={<Revision />} />
+      <Route path="qr-code-generator" element={<QRCodeGenerator />} />
+      <Route path="progress-bar" element={<ProgressBar />} />
     </Route>
   )
 );
