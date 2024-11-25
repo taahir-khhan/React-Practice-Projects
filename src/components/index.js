@@ -13,6 +13,7 @@ import LoadMore from "./11-LoadMore/LoadMore";
 import TreeView from "./12-Tree-View/TreeView";
 import QRCodeGenerator from "./13-QR-Code-Generator/QRCodeGenerator";
 import ProgressBar from "./14-Progress-Bar/ProgressBar";
+import TabsData from "./15-Tabs/TabsData";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 
@@ -31,6 +32,7 @@ export {
   RandomColor,
   RandomPassword,
   StarRating,
+  TabsData,
   ThemeChanger,
   Todo,
   TreeView,

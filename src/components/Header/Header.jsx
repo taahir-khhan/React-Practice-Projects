@@ -170,6 +170,17 @@ export default function Header() {
               Progress Bar
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/custom-tabs"
+              className={({ isActive }) =>
+                ` ${isActive ? "text-indigo-700" : "text-black"} nav__item`
+              }
+            >
+              Custom Tabs
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

@@ -22,6 +22,7 @@ import {
   RandomColor,
   RandomPassword,
   StarRating,
+  TabsData,
   ThemeChanger,
   Todo,
   TreeView,
@@ -57,6 +58,7 @@ const router = createBrowserRouter(
       <Route path="tree-view" element={<TreeView menus={menus} />} />
       <Route path="qr-code-generator" element={<QRCodeGenerator />} />
       <Route path="progress-bar" element={<ProgressBar />} />
+      <Route path="custom-tabs" element={<TabsData />} />
     </Route>
   )
 );
