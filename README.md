@@ -16,11 +16,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Increase, decrease, and reset a counter.
 
+---
+
 ### 2. **Background Changer** - [Live Demo](https://react-practice-projects-mini.vercel.app/background-changer)
 
 ![Bg Changer Screenshot](./src/screenshots/BgChanger.png)
 
 - **Features**: Change the background color with a button click.
+
+---
 
 ### 3. **Random Password Generator** - [Live Demo](https://react-practice-projects-mini.vercel.app/random-password)
 
@@ -28,11 +32,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Generate random passwords with customizable length, include numbers and special characters.
 
+---
+
 ### 4. **Currency Convertor** - [Live Demo](https://react-practice-projects-mini.vercel.app/currency-convertor)
 
 ![Currency Convertor Screenshot](./src/screenshots/CurrencyConvertor.png)
 
 - **Features**: Convert currencies using real-time exchange rates & swap between currencies.
+
+---
 
 ### 5. **Theme Changer** - [Live Demo](https://react-practice-projects-mini.vercel.app/theme-changer)
 
@@ -40,11 +48,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Toggle between light and dark themes.
 
+---
+
 ### 6. **ToDo App** - [Live Demo](https://react-practice-projects-mini.vercel.app/todo-app)
 
 ![ToDo App Screenshot](./src/screenshots/ToDo.png)
 
 - **Features**: Add, delete, modify and mark tasks as complete.
+
+---
 
 ### 7. **Accordion** - [Live Demo](https://react-practice-projects-mini.vercel.app/accordion)
 
@@ -52,11 +64,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Expand and collapse sections of content.
 
+---
+
 ### 8. **RGB & Hex Color Generator** - [Live Demo](https://react-practice-projects-mini.vercel.app/color-generator)
 
 ![RGB & Hex Color Generator Screenshot](./src/screenshots/ColorGenerator.png)
 
 - **Features**: Generate random RGB and Hex color codes.
+
+---
 
 ### 9. **Star Rating** - [Live Demo](https://react-practice-projects-mini.vercel.app/star-rating)
 
@@ -64,11 +80,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Rate items using a star-based system.
 
+---
+
 ### 10. **Image Slider** - [Live Demo](https://react-practice-projects-mini.vercel.app/image-slider)
 
 ![Image Slider Screenshot](./src/screenshots/ImageSlider.png)
 
 - **Features**: Navigate through a series of images.
+
+---
 
 ### 11. **Infinite Loading** - [Live Demo](https://react-practice-projects-mini.vercel.app/load-more)
 
@@ -76,11 +96,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Load more data as the user scrolls.
 
+---
+
 ### 12. **Tree View** - [Live Demo](https://react-practice-projects-mini.vercel.app/tree-view)
 
 ![Tree View Screenshot](./src/screenshots/TreeView.png)
 
 - **Features**: Display hierarchical data in a tree structure.
+
+---
 
 ### 13. **QR Code Generator** - [Live Demo](https://react-practice-projects-mini.vercel.app/qr-code-generator)
 
@@ -88,11 +112,15 @@ Here’s a list of all the projects included in this repository. Each project ha
 
 - **Features**: Generate QR codes from user input.
 
+---
+
 ### 14. **Progress Bar** - [Live Demo](https://react-practice-projects-mini.vercel.app/progress-bar)
 
 ![Progress Bar Screenshot](./src/screenshots/Scroll-Indicator.png)
 
 - **Features**: Display progress based on scroll position.
+
+---
 
 ### 15. **Custom Tabs** - [Live Demo](https://react-practice-projects-mini.vercel.app/custom-tabs)
 
