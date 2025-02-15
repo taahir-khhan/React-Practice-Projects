@@ -20,12 +20,9 @@ function Home() {
         Sharpen your React skills with hands-on practice & creative projects.
       </p>
 
-      <NavLink
-        to='/projects'
-        className='mt-6 px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#7c3aed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7e22ce] rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110'
-      >
+      <div className='mt-6 px-6 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#7c3aed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7e22ce] rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110 cursor-pointer'>
         Explore Projects in the Above
-      </NavLink>
+      </div>
 
       <div className='absolute top-1/3 left-1/4 w-16 h-16 bg-white/10 backdrop-blur-lg rounded-full animate-pulse'></div>
       <div className='absolute bottom-1/4 right-1/5 w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full animate-pulse delay-200'></div>
